@@ -10,10 +10,17 @@
 
 @media screen and (max-width:600px){
 
-    .img_portada{
+    /*.img_portada{
         width: 60px;
         height: 60px;
+        flex-direction: column;
+    }*/  
+
+    .portada3{
+        flex-direction: column;
+        justify-content: space-evenly;
     }
+    
     li{
         font-size: 15px;
         width: 60px;
@@ -65,9 +72,14 @@
 /* MD */
 
 @media only screen and (min-width:600px){
-    .img_portada{
+   /* .img_portada{
         width: 120px;
         height: 120px;
+    }*/
+
+    .portada3{
+        flex-direction: column;
+        justify-content: space-evenly;
     }
     #autora{
         font-size: 15px;
@@ -93,7 +105,7 @@
         font-size: 15px;
     }
     h3{
-        font-size: 15px;
+        font-size: 20px;
     }
     #h1sobremi{
         font-size: 30px;
@@ -120,9 +132,13 @@
 
 @media only screen and ( min-width:992px ){
    
-    .img_portada{
+    /*.img_portada{
         width: 200px;
         height: 200px;
+    }*/
+    .portada3{
+        flex-direction: row;
+        justify-content: space-around;
     }
     li{
         font-size: 25px;
@@ -148,7 +164,7 @@
         font-size: 30px;
     }
     h3{
-        font-size: 20px;
+        font-size: 28px;
     }
     #h1sobremi{
         font-size: 40px;
@@ -157,7 +173,7 @@
         font-size: 30px;
     }
     #parrafo1{
-        font-size: 14px;
+        font-size: 20px;
     }    
     #autora{
             font-size: 30px;
@@ -248,14 +264,6 @@ main{
     
 }
 
-.portada3{
-    display: flex;
-    flex-direction: column;
-    background-color:rgb(182, 180, 180);
-    align-items:center;
-}
-
-
 .portada{
     display: flex;
     flex-direction: row;
@@ -269,8 +277,8 @@ main{
 .portada2{
     display: flex;
     flex-direction: column;
-    background-color:antiquewhite;
-    height: 95%;
+    background-color:$colormain;
+    height: 100%;
     width: 100%;
     align-items: center;
     justify-content: space-around;
@@ -279,12 +287,10 @@ main{
 
 .portada3{
     display: flex;
-    flex-direction: column;
-    background-color:antiquewhite;
+    background-color:rgb(182, 180, 180);
     height: 100%;
     width: 100%;
     align-items:center;
-    justify-content: space-evenly;
 }
 
 .img_logo{
